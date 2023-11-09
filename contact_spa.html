@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="utf-8">
+
+    <title>Jumento Perez Contact</title>
+
+    <style>
+        html {
+            font-family: sans-serif;
+        }
+
+        body {
+            color: rgb(0, 0, 0);
+            background-image: url("images/backgroundWColor.jpg");
+            width: 50%;
+            max-width: 800px;
+            min-width: 480px;
+            margin: 0 auto;
+        }
+
+        .buttonE {
+            background: url("images/FlagEnglish.png");
+            background-size: 20px;
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+
+        .buttonS {
+            background: url("images/FlagSpanish.png");
+            background-size: 20px;
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+
+        .buttonG {
+            background: url("images/FlagGerman.png");
+            background-size: 20px;
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+
+        .lastResult {
+            color: white;
+            padding: 3px;
+        }
+
+        .rounded-borders {
+            max-width: 300px;
+            background-color: rgb(0, 0, 0);
+            padding: 2% 2% 1% 2%;
+        }
+
+        /* Solid border */
+        hr.solid {
+            border-top: 3px solid #bbb;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        table, th, td {
+            border:0px solid black;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="form" style="display: flex; justify-content: space-around;font-family: Arial, Helvetica, sans-serif; font-size:x-small;">
+    <div>
+        <label style="display: block;">Language - Sprache - Idioma</label>
+        <input type="button" value="" class="buttonE">
+        <input type="button" value="" class="buttonG">
+        <input type="button" value="" class="buttonS">
+    </div>
+</div>
+<p>
+        En caso de querer adquirir alguna de la piezas en venta que se presentan en esta página, por favor,
+           envíanos un e-mail a <a href="mailto:jumentodesperezarte@gmail.com" >jumentodesperezarte@gmail.com</a>.
+           A continuación, te indicaremos el precio final (junto con los gastos de envío).<br>
+           Como referencia los gastos de envío son los siguientes (envío estándar):<br>
+           - Dentro de Austria: 5.00€<br>
+           - Union Europea: 10.00€<br>
+           - Fuera de la UE: 15.00€<br>
+           Por favor no olvides indicar el nombre de la pieza en la que estás interesado.
+        </p>
+<button onclick="window.location.href='wcolor_spa.html';">
+        Volver
+        </button>
+</body>
+<script>
+    document.addEventListener('contextmenu',function(e){e.preventDefault();e.stopPropagation();});
+    document.addEventListener('copy',function(e){e.preventDefault();e.stopPropagation();});
+    document.addEventListener('cut',function(e){e.preventDefault();e.stopPropagation();});
+
+    const guessSubmitE = document.querySelector(".buttonE");
+    const guessSubmitG = document.querySelector(".buttonG");
+    const guessSubmitS = document.querySelector(".buttonS");
+
+    // Functions
+    //**********************
+
+    function switchToEng() {
+        location.href="contact_eng.html";
+    }
+
+    function switchToSpa() {
+        location.href="contact_spa.html";
+    }
+
+    function switchToGer() {
+        location.href="contact_ger.html";
+    }
+
+    document.getElementById("go-back").addEventListener("click", () => {
+      history.back();
+    });
+
+    guessSubmitE.addEventListener("click", switchToEng);
+    guessSubmitS.addEventListener("click", switchToSpa);
+    guessSubmitG.addEventListener("click", switchToGer);
+</script>
+</html>

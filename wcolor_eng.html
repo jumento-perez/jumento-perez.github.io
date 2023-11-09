@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+
+    <title>Jumento Perez Watercolor</title>
+
+    <style>
+        html {
+            font-family: sans-serif;
+        }
+
+        body {
+            color: rgb(0, 0, 0);
+            background-image: url("images/backgroundWColor.jpg");
+            width: 50%;
+            max-width: 800px;
+            min-width: 480px;
+            margin: 0 auto;
+        }
+
+        .form input[type="number"] {
+            width: 200px;
+        }
+        .buttonE {
+            background: url("images/FlagEnglish.png");
+            background-size: 20px;
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+
+        .buttonS {
+            background: url("images/FlagSpanish.png");
+            background-size: 20px;
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+
+        .buttonG {
+            background: url("images/FlagGerman.png");
+            background-size: 20px;
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+
+        .lastResult {
+            color: white;
+            padding: 3px;
+        }
+
+        .rounded-borders {
+            max-width: 300px;
+            background-color: rgb(0, 0, 0);
+            padding: 2% 2% 1% 2%;
+        }
+
+        /* Solid border */
+        hr.solid {
+            border-top: 3px solid #bbb;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        table, th, td {
+            border:0px solid black;
+        }
+
+        /* The Modal (background) */
+        .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content/Box */
+        .modal-content {
+          background-color: #fefefe;
+          margin: 5% auto; /* 5% from the top and centered */
+          padding: 20px;
+          border: 1px solid #888;
+          width: 40%; /* Could be more or less, depending on screen size */
+        }
+
+        /* The Close Button */
+        .close {
+          color: #aaa;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+          color: black;
+          text-decoration: none;
+          cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form" style="display: flex; justify-content: space-around;font-family: Arial, Helvetica, sans-serif; font-size:x-small;">
+        <a href="contact_eng.html" style="padding-right: 200px;; font-size:small">Contact</a>
+        <div>
+            <label style="display: block;">Language - Sprache - Idioma</label>
+            <input type="button" value="" class="buttonE">
+            <input type="button" value="" class="buttonG">
+            <input type="button" value="" class="buttonS">
+        </div>
+    </div>
+    <h1>Welcome!</h1>
+    <p>This is the artistic web page of <b>Jorge Perez Minguez</b> (aka Jumento Perez).
+           Please take a look and <a href="mailto:jumentodesperezarte@gmail.com">contact</a> me if you're interested in buying any of the available objects shown here.<br>
+           Thank you. Have a nice day.</p>
+    
+        <hr class="solid">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <div class="rounded-borders">
+                        <img id=Astrantia src=images/Astrantia.jpg alt="Nature">
+                    </div>
+                </td>
+                <td>
+                    <table style="width:100%">
+                        <tr><td><p>
+                            <b>Title: </b>Astrantia<br>
+                            <b>Size: </b>10x30 cm<br>
+                            <b>Technique(s): </b>Watercolor<br>
+                            <b>Availability: </b><tagname style="background-color:yellow;"> Reserved </tagname> <br>
+                            <b>Price: </b> 100€
+                        </p></td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    
+        <hr class="solid">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <div class="rounded-borders">
+                        <img id=PlayaEnLaGomera src=images/PlayaEnLaGomera.jpg alt="Nature">
+                    </div>
+                </td>
+                <td>
+                    <table style="width:100%">
+                        <tr><td><p>
+                            <b>Title: </b>Playa en La Gomera<br>
+                            <b>Size: </b>10x30 cm<br>
+                            <b>Technique(s): </b>Mixed:Watercolor/Gouache/<br>
+                            <b>Availability: </b><tagname style="background-color:greenyellow;"> On sale </tagname> <br>
+                            <b>Price: </b> 100€
+                        </p></td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    
+        <hr class="solid">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <div class="rounded-borders">
+                        <img id=Frigiliana src=images/Frigiliana.jpg alt="Nature">
+                    </div>
+                </td>
+                <td>
+                    <table style="width:100%">
+                        <tr><td><p>
+                            <b>Title: </b>Frigiliana<br>
+                            <b>Size: </b>10x30 cm<br>
+                            <b>Technique(s): </b>Watercolor<br>
+                            <b>Availability: </b><tagname style="background-color:greenyellow;"> On sale </tagname> <br>
+                            <b>Price: </b> 110€
+                        </p></td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    
+        <hr class="solid">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <div class="rounded-borders">
+                        <img id=CarlosEnLaCaja src=images/CarlosEnLaCaja.jpg alt="Nature">
+                    </div>
+                </td>
+                <td>
+                    <table style="width:100%">
+                        <tr><td><p>
+                            <b>Title: </b>Carlos en la caja<br>
+                            <b>Size: </b>10x30 cm<br>
+                            <b>Technique(s): </b>Watercolor<br>
+                            <b>Availability: </b><tagname style="background-color:greenyellow;"> On sale </tagname> <br>
+                            <b>Price: </b> 90€
+                        </p></td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    
+        <hr class="solid">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <div class="rounded-borders">
+                        <img id=TemploCandiPrambanan src=images/TemploCandiPrambanan.jpeg alt="Nature">
+                    </div>
+                </td>
+                <td>
+                    <table style="width:100%">
+                        <tr><td><p>
+                            <b>Title: </b>Templo Candi Prambanan<br>
+                            <b>Size: </b>10x30 cm<br>
+                            <b>Technique(s): </b>Watercolor<br>
+                            <b>Availability: </b><tagname style="background-color:greenyellow;"> On sale </tagname> <br>
+                            <b>Price: </b> 70€
+                        </p></td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    
+        <hr class="solid">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <div class="rounded-borders">
+                        <img id=HomenajeAExcalibur src=images/HomenajeAExcalibur.jpg alt="Nature">
+                    </div>
+                </td>
+                <td>
+                    <table style="width:100%">
+                        <tr><td><p>
+                            <b>Title: </b>Homenaje a Excalibur (1981)<br>
+                            <b>Size: </b>10x30 cm<br>
+                            <b>Technique(s): </b>Watercolor<br>
+                            <b>Availability: </b><tagname style="background-color:greenyellow;"> On sale </tagname> <br>
+                            <b>Price: </b> 90€
+                        </p></td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    
+        <hr class="solid">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <div class="rounded-borders">
+                        <img id=PaulClarkExerciseNr4 src=images/PaulClarkExerciseNr4.jpg alt="Nature">
+                    </div>
+                </td>
+                <td>
+                    <table style="width:100%">
+                        <tr><td><p>
+                            <b>Title: </b>Paul Clark Exercise Nr. 4<br>
+                            <b>Size: </b>10x30 cm<br>
+                            <b>Technique(s): </b>Watercolor<br>
+                            <b>Availability: </b><tagname style="background-color:greenyellow;"> On sale </tagname> <br>
+                            <b>Price: </b> 160€
+                        </p></td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    
+        <hr class="solid">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <div class="rounded-borders">
+                        <img id=PlaniciesEnIslandia src=images/PlaniciesEnIslandia.jpeg alt="Nature">
+                    </div>
+                </td>
+                <td>
+                    <table style="width:100%">
+                        <tr><td><p>
+                            <b>Title: </b>Planicies en Islandia<br>
+                            <b>Size: </b>10x30 cm<br>
+                            <b>Technique(s): </b>Watercolor<br>
+                            <b>Availability: </b><tagname style="background-color:greenyellow;"> On sale </tagname> <br>
+                            <b>Price: </b> 90€
+                        </p></td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    
+        <hr class="solid">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <div class="rounded-borders">
+                        <img id=Incontenible src=images/Incontenible.jpg alt="Nature">
+                    </div>
+                </td>
+                <td>
+                    <table style="width:100%">
+                        <tr><td><p>
+                            <b>Title: </b>Incontenible<br>
+                            <b>Size: </b>10x30 cm<br>
+                            <b>Technique(s): </b>Watercolor<br>
+                            <b>Availability: </b><tagname style="background-color:red;"> Sold </tagname> <br>
+                            <b>Price: </b> -
+                        </p></td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    
+        <hr class="solid">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <div class="rounded-borders">
+                        <img id=PaulClarkExerciseNr3 src=images/PaulClarkExerciseNr3.jpg alt="Nature">
+                    </div>
+                </td>
+                <td>
+                    <table style="width:100%">
+                        <tr><td><p>
+                            <b>Title: </b>Paul Clark Exercise Nr. 3<br>
+                            <b>Size: </b>10x30 cm<br>
+                            <b>Technique(s): </b>Watercolor<br>
+                            <b>Availability: </b><tagname style="background-color:yellow;"> Reserved </tagname> <br>
+                            <b>Price: </b> 90€
+                        </p></td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    
+        <hr class="solid">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <div class="rounded-borders">
+                        <img id=PaulClarkExerciseNr2 src=images/PaulClarkExerciseNr2.jpg alt="Nature">
+                    </div>
+                </td>
+                <td>
+                    <table style="width:100%">
+                        <tr><td><p>
+                            <b>Title: </b>PaulClark Exercise Nr. 2<br>
+                            <b>Size: </b>10x30 cm<br>
+                            <b>Technique(s): </b>Watercolor<br>
+                            <b>Availability: </b><tagname style="background-color:greenyellow;"> On sale </tagname> <br>
+                            <b>Price: </b> 70€
+                        </p></td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    
+        <hr class="solid">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <div class="rounded-borders">
+                        <img id=PaulClarkExerciseNr1 src=images/PaulClarkExerciseNr1.jpg alt="Nature">
+                    </div>
+                </td>
+                <td>
+                    <table style="width:100%">
+                        <tr><td><p>
+                            <b>Title: </b>PaulClark Exercise Nr. 1<br>
+                            <b>Size: </b>10x30 cm<br>
+                            <b>Technique(s): </b>Watercolor<br>
+                            <b>Availability: </b><tagname style="background-color:greenyellow;"> On sale </tagname> <br>
+                            <b>Price: </b> 100€
+                        </p></td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    
+        <hr class="solid">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <div class="rounded-borders">
+                        <img id=Primavera src=images/Primavera.jpg alt="Nature">
+                    </div>
+                </td>
+                <td>
+                    <table style="width:100%">
+                        <tr><td><p>
+                            <b>Title: </b>Primavera<br>
+                            <b>Size: </b>10x30 cm<br>
+                            <b>Technique(s): </b>Watercolor<br>
+                            <b>Availability: </b><tagname style="background-color:red;"> Sold </tagname> <br>
+                            <b>Price: </b> -
+                        </p></td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    
+        <hr class="solid">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <div class="rounded-borders">
+                        <img id=ElJovenGarciaMarquez src=images/ElJovenGarciaMarquez.jpg alt="Nature">
+                    </div>
+                </td>
+                <td>
+                    <table style="width:100%">
+                        <tr><td><p>
+                            <b>Title: </b>El joven García Márquez<br>
+                            <b>Size: </b>10x30 cm<br>
+                            <b>Technique(s): </b>Watercolor<br>
+                            <b>Availability: </b><tagname style="background-color:red;"> Sold </tagname> <br>
+                            <b>Price: </b> -
+                        </p></td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    
+        <hr class="solid">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <div class="rounded-borders">
+                        <img id=LaCasaDeAndreasEnYogyakarta src=images/LaCasaDeAndreasEnYogyakarta.jpg alt="Nature">
+                    </div>
+                </td>
+                <td>
+                    <table style="width:100%">
+                        <tr><td><p>
+                            <b>Title: </b>La casa de Andreas en Yogyakarta<br>
+                            <b>Size: </b>10x30 cm<br>
+                            <b>Technique(s): </b>Watercolor<br>
+                            <b>Availability: </b><tagname style="background-color:greenyellow;"> On sale </tagname> <br>
+                            <b>Price: </b> 120€
+                        </p></td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    
+        <hr class="solid">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <div class="rounded-borders">
+                        <img id=EmbalseDeManzanares src=images/EmbalseDeManzanares.jpg alt="Nature">
+                    </div>
+                </td>
+                <td>
+                    <table style="width:100%">
+                        <tr><td><p>
+                            <b>Title: </b>Embalse de Manzanares<br>
+                            <b>Size: </b>10x30 cm<br>
+                            <b>Technique(s): </b>Watercolor<br>
+                            <b>Availability: </b><tagname style="background-color:greenyellow;"> On sale </tagname> <br>
+                            <b>Price: </b> 60€
+                        </p></td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    
+        <hr class="solid">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <div class="rounded-borders">
+                        <img id=EstacionAnos20 src=images/EstacionAnos20.jpg alt="Nature">
+                    </div>
+                </td>
+                <td>
+                    <table style="width:100%">
+                        <tr><td><p>
+                            <b>Title: </b>Estación años 20<br>
+                            <b>Size: </b>10x30 cm<br>
+                            <b>Technique(s): </b>Watercolor<br>
+                            <b>Availability: </b><tagname style="background-color:yellow;"> Reserved </tagname> <br>
+                            <b>Price: </b> 70€
+                        </p></td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    
+        <hr class="solid">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <div class="rounded-borders">
+                        <img id=FrutasYVerduras src=images/FrutasYVerduras.jpg alt="Nature">
+                    </div>
+                </td>
+                <td>
+                    <table style="width:100%">
+                        <tr><td><p>
+                            <b>Title: </b>Frutas y verduras<br>
+                            <b>Size: </b>10x30 cm<br>
+                            <b>Technique(s): </b>Watercolor<br>
+                            <b>Availability: </b><tagname style="background-color:greenyellow;"> On sale </tagname> <br>
+                            <b>Price: </b> 90€
+                        </p></td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    
+        <hr class="solid">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <div class="rounded-borders">
+                        <img id=DePaseo src=images/DePaseo.jpg alt="Nature">
+                    </div>
+                </td>
+                <td>
+                    <table style="width:100%">
+                        <tr><td><p>
+                            <b>Title: </b>De Paseo<br>
+                            <b>Size: </b>10x30 cm<br>
+                            <b>Technique(s): </b>Watercolor<br>
+                            <b>Availability: </b><tagname style="background-color:greenyellow;"> On sale </tagname> <br>
+                            <b>Price: </b> 110€
+                        </p></td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    
+        <hr class="solid">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <div class="rounded-borders">
+                        <img id=AcuarelaCompartida src=images/AcuarelaCompartida.jpg alt="Nature">
+                    </div>
+                </td>
+                <td>
+                    <table style="width:100%">
+                        <tr><td><p>
+                            <b>Title: </b>Acuarela compartida<br>
+                            <b>Size: </b>10x30 cm<br>
+                            <b>Technique(s): </b>Watercolor<br>
+                            <b>Availability: </b><tagname style="background-color:red;"> Sold </tagname> <br>
+                            <b>Price: </b> -
+                        </p></td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    
+        <hr class="solid">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <div class="rounded-borders">
+                        <img id=India src=images/India.jpg alt="Nature">
+                    </div>
+                </td>
+                <td>
+                    <table style="width:100%">
+                        <tr><td><p>
+                            <b>Title: </b>India<br>
+                            <b>Size: </b>10x30 cm<br>
+                            <b>Technique(s): </b>Watercolor<br>
+                            <b>Availability: </b><tagname style="background-color:greenyellow;"> On sale </tagname> <br>
+                            <b>Price: </b> 160€
+                        </p></td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    
+        <hr class="solid">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <div class="rounded-borders">
+                        <img id=Cafeteria src=images/Cafeteria.jpg alt="Nature">
+                    </div>
+                </td>
+                <td>
+                    <table style="width:100%">
+                        <tr><td><p>
+                            <b>Title: </b>Cafeteria<br>
+                            <b>Size: </b>10x30 cm<br>
+                            <b>Technique(s): </b>Watercolor<br>
+                            <b>Availability: </b><tagname style="background-color:greenyellow;"> On sale </tagname> <br>
+                            <b>Price: </b> 110€
+                        </p></td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    
+        <hr class="solid">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <div class="rounded-borders">
+                        <img id=Cafetera src=images/Cafetera.jpg alt="Nature">
+                    </div>
+                </td>
+                <td>
+                    <table style="width:100%">
+                        <tr><td><p>
+                            <b>Title: </b>Cafetera<br>
+                            <b>Size: </b>10x30 cm<br>
+                            <b>Technique(s): </b>Watercolor<br>
+                            <b>Availability: </b><tagname style="background-color:greenyellow;"> On sale </tagname> <br>
+                            <b>Price: </b> 120€
+                        </p></td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    
+        <hr class="solid">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <div class="rounded-borders">
+                        <img id=BuenaVistaSocialClub src=images/BuenaVistaSocialClub.jpg alt="Nature">
+                    </div>
+                </td>
+                <td>
+                    <table style="width:100%">
+                        <tr><td><p>
+                            <b>Title: </b>Buena Vista Social Club<br>
+                            <b>Size: </b>10x30 cm<br>
+                            <b>Technique(s): </b>Watercolor<br>
+                            <b>Availability: </b><tagname style="background-color:yellow;"> Reserved </tagname> <br>
+                            <b>Price: </b> 90€
+                        </p></td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img id="popUpImage" src=images/Astrantia.jpg alt="Nature" style="max-width: 800px;">
+            </div>
+        </div>
+</body>
+<script>
+        document.addEventListener('contextmenu',function(e){e.preventDefault();e.stopPropagation();});
+        document.addEventListener('copy',function(e){e.preventDefault();e.stopPropagation();});
+        document.addEventListener('cut',function(e){e.preventDefault();e.stopPropagation();});
+
+        const guessSubmitE = document.querySelector(".buttonE");
+        const guessSubmitG = document.querySelector(".buttonG");
+        const guessSubmitS = document.querySelector(".buttonS");
+
+        // Functions
+        //**********************
+
+        function switchToEng() {
+            location.href="wcolor_eng.html";
+        }
+
+        function switchToSpa() {
+            location.href="wcolor_spa.html";
+        }
+
+        function switchToGer() {
+            location.href="wcolor_ger.html";
+        }
+
+        /*      Modal               */
+        //****************************
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        
+            // Get the button that opens the modal
+            var btn_Astrantia = document.getElementById("Astrantia");
+
+            // When the user clicks on the button, open the modal
+            btn_Astrantia.onclick = function() {
+                document.getElementById("popUpImage").src="images/Astrantia.jpg";
+                modal.style.display = "block";
+            }
+        
+            // Get the button that opens the modal
+            var btn_PlayaEnLaGomera = document.getElementById("PlayaEnLaGomera");
+
+            // When the user clicks on the button, open the modal
+            btn_PlayaEnLaGomera.onclick = function() {
+                document.getElementById("popUpImage").src="images/PlayaEnLaGomera.jpg";
+                modal.style.display = "block";
+            }
+        
+            // Get the button that opens the modal
+            var btn_Frigiliana = document.getElementById("Frigiliana");
+
+            // When the user clicks on the button, open the modal
+            btn_Frigiliana.onclick = function() {
+                document.getElementById("popUpImage").src="images/Frigiliana.jpg";
+                modal.style.display = "block";
+            }
+        
+            // Get the button that opens the modal
+            var btn_CarlosEnLaCaja = document.getElementById("CarlosEnLaCaja");
+
+            // When the user clicks on the button, open the modal
+            btn_CarlosEnLaCaja.onclick = function() {
+                document.getElementById("popUpImage").src="images/CarlosEnLaCaja.jpg";
+                modal.style.display = "block";
+            }
+        
+            // Get the button that opens the modal
+            var btn_TemploCandiPrambanan = document.getElementById("TemploCandiPrambanan");
+
+            // When the user clicks on the button, open the modal
+            btn_TemploCandiPrambanan.onclick = function() {
+                document.getElementById("popUpImage").src="images/TemploCandiPrambanan.jpeg";
+                modal.style.display = "block";
+            }
+        
+            // Get the button that opens the modal
+            var btn_HomenajeAExcalibur = document.getElementById("HomenajeAExcalibur");
+
+            // When the user clicks on the button, open the modal
+            btn_HomenajeAExcalibur.onclick = function() {
+                document.getElementById("popUpImage").src="images/HomenajeAExcalibur.jpg";
+                modal.style.display = "block";
+            }
+        
+            // Get the button that opens the modal
+            var btn_PaulClarkExerciseNr4 = document.getElementById("PaulClarkExerciseNr4");
+
+            // When the user clicks on the button, open the modal
+            btn_PaulClarkExerciseNr4.onclick = function() {
+                document.getElementById("popUpImage").src="images/PaulClarkExerciseNr4.jpg";
+                modal.style.display = "block";
+            }
+        
+            // Get the button that opens the modal
+            var btn_PlaniciesEnIslandia = document.getElementById("PlaniciesEnIslandia");
+
+            // When the user clicks on the button, open the modal
+            btn_PlaniciesEnIslandia.onclick = function() {
+                document.getElementById("popUpImage").src="images/PlaniciesEnIslandia.jpeg";
+                modal.style.display = "block";
+            }
+        
+            // Get the button that opens the modal
+            var btn_Incontenible = document.getElementById("Incontenible");
+
+            // When the user clicks on the button, open the modal
+            btn_Incontenible.onclick = function() {
+                document.getElementById("popUpImage").src="images/Incontenible.jpg";
+                modal.style.display = "block";
+            }
+        
+            // Get the button that opens the modal
+            var btn_PaulClarkExerciseNr3 = document.getElementById("PaulClarkExerciseNr3");
+
+            // When the user clicks on the button, open the modal
+            btn_PaulClarkExerciseNr3.onclick = function() {
+                document.getElementById("popUpImage").src="images/PaulClarkExerciseNr3.jpg";
+                modal.style.display = "block";
+            }
+        
+            // Get the button that opens the modal
+            var btn_PaulClarkExerciseNr2 = document.getElementById("PaulClarkExerciseNr2");
+
+            // When the user clicks on the button, open the modal
+            btn_PaulClarkExerciseNr2.onclick = function() {
+                document.getElementById("popUpImage").src="images/PaulClarkExerciseNr2.jpg";
+                modal.style.display = "block";
+            }
+        
+            // Get the button that opens the modal
+            var btn_PaulClarkExerciseNr1 = document.getElementById("PaulClarkExerciseNr1");
+
+            // When the user clicks on the button, open the modal
+            btn_PaulClarkExerciseNr1.onclick = function() {
+                document.getElementById("popUpImage").src="images/PaulClarkExerciseNr1.jpg";
+                modal.style.display = "block";
+            }
+        
+            // Get the button that opens the modal
+            var btn_Primavera = document.getElementById("Primavera");
+
+            // When the user clicks on the button, open the modal
+            btn_Primavera.onclick = function() {
+                document.getElementById("popUpImage").src="images/Primavera.jpg";
+                modal.style.display = "block";
+            }
+        
+            // Get the button that opens the modal
+            var btn_ElJovenGarciaMarquez = document.getElementById("ElJovenGarciaMarquez");
+
+            // When the user clicks on the button, open the modal
+            btn_ElJovenGarciaMarquez.onclick = function() {
+                document.getElementById("popUpImage").src="images/ElJovenGarciaMarquez.jpg";
+                modal.style.display = "block";
+            }
+        
+            // Get the button that opens the modal
+            var btn_LaCasaDeAndreasEnYogyakarta = document.getElementById("LaCasaDeAndreasEnYogyakarta");
+
+            // When the user clicks on the button, open the modal
+            btn_LaCasaDeAndreasEnYogyakarta.onclick = function() {
+                document.getElementById("popUpImage").src="images/LaCasaDeAndreasEnYogyakarta.jpg";
+                modal.style.display = "block";
+            }
+        
+            // Get the button that opens the modal
+            var btn_EmbalseDeManzanares = document.getElementById("EmbalseDeManzanares");
+
+            // When the user clicks on the button, open the modal
+            btn_EmbalseDeManzanares.onclick = function() {
+                document.getElementById("popUpImage").src="images/EmbalseDeManzanares.jpg";
+                modal.style.display = "block";
+            }
+        
+            // Get the button that opens the modal
+            var btn_EstacionAnos20 = document.getElementById("EstacionAnos20");
+
+            // When the user clicks on the button, open the modal
+            btn_EstacionAnos20.onclick = function() {
+                document.getElementById("popUpImage").src="images/EstacionAnos20.jpg";
+                modal.style.display = "block";
+            }
+        
+            // Get the button that opens the modal
+            var btn_FrutasYVerduras = document.getElementById("FrutasYVerduras");
+
+            // When the user clicks on the button, open the modal
+            btn_FrutasYVerduras.onclick = function() {
+                document.getElementById("popUpImage").src="images/FrutasYVerduras.jpg";
+                modal.style.display = "block";
+            }
+        
+            // Get the button that opens the modal
+            var btn_DePaseo = document.getElementById("DePaseo");
+
+            // When the user clicks on the button, open the modal
+            btn_DePaseo.onclick = function() {
+                document.getElementById("popUpImage").src="images/DePaseo.jpg";
+                modal.style.display = "block";
+            }
+        
+            // Get the button that opens the modal
+            var btn_AcuarelaCompartida = document.getElementById("AcuarelaCompartida");
+
+            // When the user clicks on the button, open the modal
+            btn_AcuarelaCompartida.onclick = function() {
+                document.getElementById("popUpImage").src="images/AcuarelaCompartida.jpg";
+                modal.style.display = "block";
+            }
+        
+            // Get the button that opens the modal
+            var btn_India = document.getElementById("India");
+
+            // When the user clicks on the button, open the modal
+            btn_India.onclick = function() {
+                document.getElementById("popUpImage").src="images/India.jpg";
+                modal.style.display = "block";
+            }
+        
+            // Get the button that opens the modal
+            var btn_Cafeteria = document.getElementById("Cafeteria");
+
+            // When the user clicks on the button, open the modal
+            btn_Cafeteria.onclick = function() {
+                document.getElementById("popUpImage").src="images/Cafeteria.jpg";
+                modal.style.display = "block";
+            }
+        
+            // Get the button that opens the modal
+            var btn_Cafetera = document.getElementById("Cafetera");
+
+            // When the user clicks on the button, open the modal
+            btn_Cafetera.onclick = function() {
+                document.getElementById("popUpImage").src="images/Cafetera.jpg";
+                modal.style.display = "block";
+            }
+        
+            // Get the button that opens the modal
+            var btn_BuenaVistaSocialClub = document.getElementById("BuenaVistaSocialClub");
+
+            // When the user clicks on the button, open the modal
+            btn_BuenaVistaSocialClub.onclick = function() {
+                document.getElementById("popUpImage").src="images/BuenaVistaSocialClub.jpg";
+                modal.style.display = "block";
+            }
+        
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        guessSubmitE.addEventListener("click", switchToEng);
+        guessSubmitS.addEventListener("click", switchToSpa);
+        guessSubmitG.addEventListener("click", switchToGer);
+    </script>
+</html>

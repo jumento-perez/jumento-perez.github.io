@@ -132,6 +132,28 @@
             <tr>
                 <td>
                     <div class="rounded-borders">
+                        <img id=AtardeceEnLaPradera src=images/AtardeceEnLaPradera.jpg alt="Nature">
+                    </div>
+                </td>
+                <td>
+                    <table style="width:100%; background-color:rgb(252, 255, 212)">
+                        <tr><td><p>
+                            <b>Título: </b>Atardece en la pradera<br>
+                            <b>Tamaño: </b>24x32 cm  (Ancho x Alto)<br>
+                            <b>Técnica(s): </b>Acuarela<br>
+                            <b>Disponibilidad: </b><tagname style="background-color:greenyellow;"> En venta </tagname> <br>
+                            <b>Precio: </b> 90€
+                        </p></td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    
+        <hr class="solid">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <div class="rounded-borders">
                         <img id=DelanteDelHorreo src=images/DelanteDelHorreo.jpg alt="Nature">
                     </div>
                 </td>
@@ -740,6 +762,15 @@
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
 
+        
+            // Get the button that opens the modal
+            var btn_AtardeceEnLaPradera = document.getElementById("AtardeceEnLaPradera");
+
+            // When the user clicks on the button, open the modal
+            btn_AtardeceEnLaPradera.onclick = function() {
+                document.getElementById("popUpImage").src="images/AtardeceEnLaPradera.jpg";
+                modal.style.display = "block";
+            }
         
             // Get the button that opens the modal
             var btn_DelanteDelHorreo = document.getElementById("DelanteDelHorreo");

@@ -132,6 +132,28 @@
             <tr>
                 <td>
                     <div class="rounded-borders">
+                        <img id=Carbonero src=images/Carbonero.jpg alt="Nature">
+                    </div>
+                </td>
+                <td>
+                    <table style="width:100%; background-color:rgb(252, 255, 212)">
+                        <tr><td><p>
+                            <b>Title: </b>Carbonero<br>
+                            <b>Size: </b>24x32 cm  (Width x Height)<br>
+                            <b>Technique(s): </b>Watercolor<br>
+                            <b>Availability: </b><tagname style="background-color:greenyellow;"> On sale </tagname> <br>
+                            <b>Price: </b> 100€
+                        </p></td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    
+        <hr class="solid">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <div class="rounded-borders">
                         <img id=AtardeceEnLaPradera src=images/AtardeceEnLaPradera.jpg alt="Nature">
                     </div>
                 </td>
@@ -762,6 +784,15 @@
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
 
+        
+            // Get the button that opens the modal
+            var btn_Carbonero = document.getElementById("Carbonero");
+
+            // When the user clicks on the button, open the modal
+            btn_Carbonero.onclick = function() {
+                document.getElementById("popUpImage").src="images/Carbonero.jpg";
+                modal.style.display = "block";
+            }
         
             // Get the button that opens the modal
             var btn_AtardeceEnLaPradera = document.getElementById("AtardeceEnLaPradera");

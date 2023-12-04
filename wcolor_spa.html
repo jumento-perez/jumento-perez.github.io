@@ -132,6 +132,28 @@
             <tr>
                 <td>
                     <div class="rounded-borders">
+                        <img id=TardeEnElTablao src=images/TardeEnElTablao.jpg alt="Nature">
+                    </div>
+                </td>
+                <td>
+                    <table style="width:100%; background-color:rgb(252, 255, 212)">
+                        <tr><td><p>
+                            <b>Título: </b>TardeEnElTablao<br>
+                            <b>Tamaño: </b>32x24 cm  (Ancho x Alto)<br>
+                            <b>Técnica(s): </b>Acuarela<br>
+                            <b>Disponibilidad: </b><tagname style="background-color:greenyellow;"> En venta </tagname> <br>
+                            <b>Precio: </b> 150€
+                        </p></td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    
+        <hr class="solid">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <div class="rounded-borders">
                         <img id=Carbonero src=images/Carbonero.jpg alt="Nature">
                     </div>
                 </td>
@@ -784,6 +806,15 @@
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
 
+        
+            // Get the button that opens the modal
+            var btn_TardeEnElTablao = document.getElementById("TardeEnElTablao");
+
+            // When the user clicks on the button, open the modal
+            btn_TardeEnElTablao.onclick = function() {
+                document.getElementById("popUpImage").src="images/TardeEnElTablao.jpg";
+                modal.style.display = "block";
+            }
         
             // Get the button that opens the modal
             var btn_Carbonero = document.getElementById("Carbonero");
